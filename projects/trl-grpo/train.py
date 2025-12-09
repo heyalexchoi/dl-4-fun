@@ -16,6 +16,7 @@ trainer = GRPOTrainer(
     model="Qwen/Qwen2-0.5B-Instruct",
     reward_funcs=accuracy_reward,
     train_dataset=dataset,
+    report_to="wandb",
 )
 
 # Start training

@@ -15,6 +15,5 @@ RUN uv sync --frozen --no-dev
 # Copy project code
 COPY . .
 
-# Default command (override in RunPod template)
-CMD ["python", "--version"]
+CMD [ "/start.sh" ]
 
