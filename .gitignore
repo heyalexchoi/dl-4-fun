@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+uv.lock
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and outputs
+checkpoints/
+outputs/
+logs/
+wandb/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+
+# Data
+data/
+datasets/
+*.h5
+*.hdf5
+
+# Docker
+*.log
+
