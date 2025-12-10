@@ -28,6 +28,7 @@ GRPO (Group Relative Policy Optimization) training following the [TRL quickstart
 
 ## Deployment
 
-See `Dockerfile` for RunPod deployment configuration.
+expects `WANDB_API_KEY` env var to be set in the pod
+
 
 
