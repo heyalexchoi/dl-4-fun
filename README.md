@@ -23,7 +23,7 @@ export UV_CACHE_DIR=/workspace/.uv-cache
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Create venv on volume
-uv venv .venv
+uv venv
 source .venv/bin/activate
 
 # install dependencies
