@@ -8,19 +8,27 @@ A container for small deep-learning learning projects and experiments.
 - `shared/` - Shared utilities (add only when needed)
 
 
-## local setup
+## Runpod setup
+
+**Expects `GITHUB_PAT` to be set in ENV**
+
 ```bash
+cd /workspace  # This is the persistent volume
+git clone https://${GITHUB_PAT}@github.com/heyalexchoi/dl-4-fun.git
+cd dl-4-fun
+
+# Install uv to volume so it persists
+export CARGO_HOME=/workspace/.cargo
+export UV_CACHE_DIR=/workspace/.uv-cache
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+# Create venv on volume
 uv venv .venv
 source .venv/bin/activate
 
 # install dependencies
 uv sync
 ```
-
-## runpod setup
-`bash setup.sh`
 
 
 ## Build

@@ -11,6 +11,7 @@ This project trains a small language model (Qwen2-0.5B-Instruct) using GRPO on t
 From the project root:
 
 ```bash
+source .venv/bin/activate
 # Single GPU
 accelerate launch projects/trl-grpo/train.py
 
