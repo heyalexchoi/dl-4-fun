@@ -7,11 +7,28 @@ A container for small deep-learning learning projects and experiments.
 - `projects/` - Individual learning projects, each self-contained
 - `shared/` - Shared utilities (add only when needed)
 
-## uv
-Install uv if adding deps locally
-`curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+## local setup
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+uv venv .venv
+source .venv/bin/activate
+
+# install dependencies
+uv sync
+```
+
+## runpod setup
+`bash setup.sh`
+
 
 ## Build
+Actually not sure if I need docker. trying using the runpod pytorch image
+`runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404`
+
+GITHUB_PAT in env vars
+
 ```bash
 # login
 docker login
